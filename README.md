@@ -20,46 +20,34 @@ A RESTful API for managing tasks, built using Node.js, Express, and MongoDB. The
 
 ### 1. Clone the Repository
 
-```
-git clone https://github.com/sulemanshaik109/task-manager.git
-cd task-manager
-```
+    git clone https://github.com/sulemanshaik109/task-manager.git
+    cd task-manager
 
 ### 2. Install Dependencies
 
-```
-npm install
-```
+    npm install
 
 ### 3. Configure Environment Variables
 
 Create a .env file in the root directory and add the following:
 
-```
-PORT=5000
-MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority
-```
-
-Replace username, password, cluster, and database with your MongoDB credentials.
+    PORT=5000
+    MONGO_URI=mongodb+srv://sulemanshaik109:15243109Ss@suleman1.mzfvh.mongodb.net/taskdb?retryWrites=true&w=majority&appName=Suleman1
 
 ### 4. Start the Server
 
-```
-node index.js
-```
+    node index.js
 
 The server will run on http://localhost:5000.
 
 ## Endpoints
 ### Base URL
 
-```
-http://localhost:5000
-```
+    http://localhost:5000
 
 ### 1. Create a Task
 
-POST /tasks
+POST /api/tasks
 
 Request Body:
 
@@ -86,7 +74,7 @@ Response:
 
 ### 2. Retrieve All Tasks
 
-GET /tasks
+GET /api/tasks
 
 Query Parameters:
 
@@ -123,7 +111,7 @@ Response:
 
 ### 3. Retrieve a Single Task
 
-GET /tasks/:id
+GET /api/tasks/:id
 
 Example Request:
 
@@ -144,7 +132,7 @@ Response:
 
 ### 4. Update a Task
 
-PUT /tasks/:id
+PUT /api/tasks/:id
 
 Request Body:
 
@@ -167,7 +155,7 @@ Response:
 
 ### 5. Delete a Task
 
-DELETE /tasks/:id
+DELETE /api/tasks/:id
 
 Example Request:
 
